@@ -8,22 +8,24 @@
     <header>
       <button class="again btn">Again!</button>
       <h3>Between 1 and 20</h3>
+      <h1>Guess the Number!!</h1>
     </header>
 
-    <section class="score">
-      <h1></h1>
+    <section class="score-box">
+      <h2>?</h2>
     </section>
 
     <section class="enter">
       <div class="left">
-        <input type="number" class="guess" />
+        <input type="number" class="guess" min="1" max="20" />
         <button class="check btn">Check!</button>
+        <p class="idea"></p>
       </div>
       <div class="right">
-        <p class="mssg">Correct !!!</p>
+        <p class="mssg">Waiting for your response</p>
         <p class="score">
           Score :
-          <span class="high-scoren">20</span>
+          <span class="scoren">20</span>
         </p>
         <p class="high-score">
           HighScore:
