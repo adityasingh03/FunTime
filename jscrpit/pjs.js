@@ -12,7 +12,7 @@ let s = lefts;
 let cs = leftcs;
 let total = 0;
 let totally = 0;
-/*document.querySelector(".hold").addEventListener("click", function () {*/
+
 document.querySelector(".roll").addEventListener("click", function () {
   let v = Math.trunc(Math.random() * 6) + 1;
   let every = 0;
@@ -55,8 +55,8 @@ document.querySelector(".roll").addEventListener("click", function () {
     m = "six";
   }
   every = totally + total;
-  if (every > 20) {
-    f4(every);
+  if (every > 100) {
+    f4();
   }
 });
 
@@ -78,10 +78,22 @@ const f2 = function () {
     s = rights;
     cs = rightcs;
     totally = tr;
+    document.querySelector(".boxl").style.backgroundColor =
+      "rgba(255, 255, 255, 0.3)";
+    document.querySelector(".boxr").style.backgroundColor =
+      "rgba(255, 255, 255, 0.6)";
+    document.querySelector(".h2l").style.fontSize = "120%";
+    document.querySelector(".h2r").style.fontSize = "150%";
   } else {
     s = lefts;
     cs = leftcs;
     totally = tl;
+    document.querySelector(".boxr").style.backgroundColor =
+      "rgba(255, 255, 255, 0.3)";
+    document.querySelector(".boxl").style.backgroundColor =
+      "rgba(255, 255, 255, 0.6)";
+    document.querySelector(".h2r").style.fontSize = "120%";
+    document.querySelector(".h2l").style.fontSize = "150%";
   }
 };
 
@@ -89,13 +101,17 @@ const f3 = function () {
   if (s == lefts) tl = totally;
   else tr = totally;
 };
-let k = 0;
-const f4 = function (k) {
+
+const f4 = function () {
   cs.textContent = 0;
-  s.textContent = 20;
+  s.textContent = 100;
+  document.querySelector(".dice").style.visibility = "hidden";
+  document.querySelector(".roll").disabled = true;
+  document.querySelector(".hold").disabled = true;
+  document.querySelector(".new").style.fontWeight = 800;
   if (s === lefts) {
-    window.alert("player1 winss");
+    window.alert("player1 winsss");
   } else {
-    window.alert("player2 winss");
+    window.alert("player2 winsss");
   }
 };

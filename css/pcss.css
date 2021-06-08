@@ -6,12 +6,7 @@
 
 html {
   height: 100vh;
-  background-image: linear-gradient(
-    to right bottom,
-    #eb4848,
-    #da5aaf,
-    rgb(212, 66, 241)
-  );
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
   font-size: 20px;
 }
 .pig {
@@ -46,7 +41,8 @@ html {
   -moz-border-radius: 0 5px 5px 0;
   -ms-border-radius: 0 5px 5px 0;
   -o-border-radius: 0 5px 5px 0;
-  background-color: rgba(221, 80, 193, 0.514);
+  background-color: rgba(255, 255, 255, 0.3);
+  opacity: 1;
 }
 
 .boxl h2,
@@ -64,12 +60,15 @@ html {
 .boxl h2,
 .boxr h2 {
   margin: 30px 0;
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  letter-spacing: 2px;
 }
 .boxl h1,
 .boxr h1 {
   font-size: 300%;
   margin: 30px 0;
-  color: #c20a84;
+  color: #dd0f3c;
 }
 
 .boxl h3,
