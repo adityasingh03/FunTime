@@ -3,6 +3,7 @@
   padding: 0;
   font-family: "Zilla Slab", serif;
   font-size: 20px;
+  color: white;
 }
 
 html {
@@ -10,8 +11,8 @@ html {
   width: 100vw;
   background-image: linear-gradient(
     to top left,
-    rgb(241, 188, 127) 30%,
-    rgb(236, 50, 50) 70%
+    rgb(236, 50, 50),
+    rgb(241, 188, 127) 70%
   );
   background-size: cover;
   overflow: hidden;
@@ -21,7 +22,11 @@ html {
   padding-top: 60px;
   width: 60%;
   margin-left: 20%;
-  background-color: aliceblue;
+  background-image: linear-gradient(
+    to top,
+    rgba(58, 54, 54, 0.9),
+    rgb(58, 54, 54, 0.8)
+  );
   height: 50vh;
   margin-top: 20vh;
   border-radius: 20px;
@@ -83,6 +88,7 @@ p {
 }
 
 .but {
+  text-align: center;
   width: 40%;
   border: none;
   background-image: linear-gradient(
@@ -91,13 +97,14 @@ p {
     rgb(241, 188, 127)
   );
   padding: 8px 5px;
-  color: white;
+  color: black;
   font-weight: 500;
   border-radius: 250px;
   -webkit-border-radius: 250px;
   -moz-border-radius: 250px;
   -ms-border-radius: 250px;
   -o-border-radius: 250px;
+  text-shadow: 1px 1px 1px rgb(255, 255, 255);
 }
 
 .but1 {
@@ -105,8 +112,18 @@ p {
 }
 
 .but a {
-  color: white;
+  color: rgb(29, 28, 28);
   font-size: 100%;
   font-weight: 500;
   text-decoration: none;
+}
+span {
+  visibility: hidden;
+  text-shadow: 0px 0px 1px rgb(255, 255, 255);
+  color: rgb(29, 28, 28);
+  padding: 8px 5px;
+  font-weight: 800;
+}
+.but:hover span {
+  visibility: visible;
 }
